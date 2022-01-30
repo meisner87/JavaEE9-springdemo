@@ -4,6 +4,7 @@ put to repository only important files which cannot be recreated by any other to
 -in order to commit empty folder add .gitkeep file inside
 - when changing branch, working tree should be clean
 - we should edit only the last commit and if its s absolutely necessary
+- Always commit working code
 
 ### Commands
 - git status - show whatˇs going on in the repository - which branch we are on right now and if there are any uncommitted changes 
