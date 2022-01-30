@@ -14,7 +14,7 @@ import java.util.List;
 
 @Controller
 @Slf4j
-@RequestMapping("/person")
+@RequestMapping("/persons")
 public class PersonController {
 
     public static final String PERSONS_KEY = "persons";
@@ -29,10 +29,18 @@ public class PersonController {
     //with var Java is going to quess type of the variable based on assigned value
     //var name = "Andreas"; //String name = "Andreas";
     @GetMapping("/names")
-    public String showListOfPersonsNames(Model data){
-    var persons  = personService.getAllPersons();
+    public String showListOfPersonsNames(Model data) {
+        var persons = personService.getAllPersons();
 
-    data.addAttribute(PERSONS_KEY,persons);
+        data.addAttribute(PERSONS_KEY, persons);
         return "persons/persons-names";
+    }
+@GetMapping("/details")
+    public String showDetailedPersonsList(Model data) {
+    var persons = personService.getAllPersons();
+
+    data.addAttribute(PERSONS_KEY, persons);
+
+        return "persons/details-table";
     }
 }
