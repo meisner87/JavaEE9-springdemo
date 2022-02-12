@@ -7,7 +7,7 @@ put to repository only important files which cannot be recreated by any other to
 - Always commit working code
 
 ### Commands
-- git status - show whatˇs going on in the repository - which branch we are on right now and if there are any uncommitted changes 
+- git status - show what's going on in the repository - which branch we are on right now and if there are any uncommitted changes 
 - git log shows git history
 - git log - graph - shows git history as graph
 - git branch - show available branches
