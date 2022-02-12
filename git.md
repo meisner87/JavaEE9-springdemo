@@ -12,8 +12,3 @@ put to repository only important files which cannot be recreated by any other to
 - git log - graph - shows git history as graph
 - git branch - show available branches
 - git branch -a - show all available branches - on my machine and remote ones(like on Github)
-
-
-- git branch - show available branches
-- git branch -a - show all available branches - on my machine and remote ones(like on Github)
-- 
