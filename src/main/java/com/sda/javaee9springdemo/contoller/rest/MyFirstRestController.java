@@ -1,6 +1,8 @@
 package com.sda.javaee9springdemo.contoller.rest;
 
 
+import com.sda.javaee9springdemo.entity.Child;
+import com.sda.javaee9springdemo.entity.Mother;
 import com.sda.javaee9springdemo.entity.Person;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,5 +37,10 @@ public class MyFirstRestController {
                 new Person("Anton","Losman",37)
 
     };
+}
+
+@GetMapping("/mother")
+    public Mother motherWithChild(){
+        return new Mother("Anna",new Child("Maria","female"));
 }
 }
