@@ -33,9 +33,9 @@ public class FirstPersonRestController {
     }
 
     @GetMapping("/with-headers")
-    public ResponseEntity<Person> customResponseEntityWithHeaders(){
+    public ResponseEntity<Person> customResponseEntityWithHeaders() {
         HttpHeaders headers = new HttpHeaders();
-        headers.add("name","Andreas");
-        return new ResponseEntity<>(new Person("Toomas","Tamm",50),headers,HttpStatus.OK);
+        headers.add("name", "Andreas");
+        return new ResponseEntity<>(new Person("Toomas", "Tamm", 50), headers, HttpStatus.OK);
     }
 }
